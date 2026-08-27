@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevConnect</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+        }
+
+        .post {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px gray;
+            position: relative;
+        }
+
+        /* Name + username + time */
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .username {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .message {
+            margin-top: 18px;
+            line-height: 1.5;
+        }
+
+        /* Verified badge */
+        .verified {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+
+            background-color: #bde7f5;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        /* Trending badge */
+        .trending {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+
+            background-color: #ffe3a3;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        /* New Post button */
+        .new-post {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        DevConnect
+    </header>
+
+    <div class="container">
+
+        <!-- First Post -->
+        <div class="post">
+
+            <span class="verified">
+                Verified Author
+            </span>
+
+            <div class="user-info">
+                <span class="name">Alex Rivera</span>
+                <span class="username">@alex_dev · 2h ago</span>
+            </div>
+
+            <p class="message">
+                Just deployed our Node.js microservice to production.
+                Latency dropped by 40% using Redis caching! 🚀
+            </p>
+
+        </div>
+
+
+        <!-- Second Post -->
+        <div class="post">
+
+            <span class="trending">
+                Trending
+            </span>
+
+            <div class="user-info">
+                <span class="name">Tech Careers India</span>
+                <span class="username">@tech_jobs · 5h ago</span>
+            </div>
+
+            <p class="message">
+                Top skills hiring managers are looking for in 2026:
+                System Design, AI integration, and core CSS layout mastery.
+            </p>
+
+        </div>
+
+
+        <!-- Third Post -->
+        <div class="post">
+
+            <div class="user-info">
+                <span class="name">Frontend Daily</span>
+                <span class="username">@frontend_tips · 14h ago</span>
+            </div>
+
+            <p class="message">
+                Remember: position absolute looks for the nearest parent
+                with position relative. If it doesn't find one, it anchors
+                to the viewport!
+            </p>
+
+        </div>
+
+    </div>
+
+    <button class="new-post">
+        New Post
+    </button>
+
+</body>
+</html>
