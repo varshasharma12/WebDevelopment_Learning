@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],[type="number"],[type="date"]{
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+
+    }
+
+        button {
+            padding: 10px 25px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Registration Portal</h1>
+
+    <form action="/register" method="post">
+
+        <label class="field-level" for="fullName">Full Name:</label> <br>
+        <input type="text" id="fullName" placeholder="Enter Name....">
+        <br>
+
+        <label for="email">University Email:</label>  <br>
+        <input type="text" id="email" placeholder="Enter Mail...">
+        <br>
+
+        <label for="age">Age:</label>  <br>
+        <input type="number" name="age" id="age">
+        <br>
+
+        <label for="dateOfBirth">Date of Birth:</label>  <br>
+        <input type="date" name="dateOfBirth" id="dateOfBirth">
+        <br>
+
+        <label for="gender">Gender:</label>  <br>
+
+        <input type="radio" value="male" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" value="female" name="gender" id="female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <label>Skills:</label>
+        <br>
+
+        <input type="checkbox" id="Java" value="Java">
+        <label for="Java">Java</label>
+
+        <input type="checkbox" id="Javascript" value="Javascript">
+        <label for="Javascript">Javascript</label>
+
+        <br><br>
+         <label for="branch">Branch:</label>
+        <select name="branch" id="branch" required>
+        <option value="">Select Branch</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="Mechanical">Mechanical</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
