@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards-container{
+            display:grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 300px);
+            background-color:aliceblue;
+            font-family: sans-serif;
+            gap:60px;
+        }
+        .movie-card{
+            width:300px;
+            border:1px solid;
+            border-color:#e5e7eb;
+            background-color:white;
+            border-radius:16px;
+            overflow:hiden;
+            transition: all 0.2s;
+            opacity:0;
+            animation:CardAnimation 0.6s ease;
+        }
+        .movie-card:hover{
+            transform: scaleY(1.1);
+        }
+        .movie-image img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+        .movie-images img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+            display:block;
+        }
+        .movie-title{
+            font-weight: 600;
+        }
+        .movie-info{
+            padding:5px;
+        }
+        .movie-details{
+            color:#545459;
+        }
+        @keyframes CardAnimation{
+            from{
+                opacity:0;
+                transform:translateY(30px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0px);
+            }
+        }
+        .movie-card:nth-child(1){
+            animation-delay: (0.1s);
+        }
+        .movie-card:nth-child(2){
+            animation-delay: (0.2s);
+        }
+        .movie-card:nth-child(3){
+            animation-delay: (0.3s);
+        }
+    </style>
+</head>
+<body>
+    <body>
+         <div class="cards-container">
+            <div class="cards-container">
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://cdn.district.in/movies-assets/images/cinema/Hanuman-Ansh-3199a900-6975-11f1-a51b-91d242246b61.jpg">
+            </div>
+            
+            <div class=""movie-info>
+                <h5 class="movie-title">Hanuman Ansh</h5>
+                <span class="movie-details">U | Hindi</span>
+            </div>
+            </div>
+
+            <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://cdn.district.in/movies-assets/images/cinema/toxiv%3Dc-8340c900-9c6f-11f1-97d4-73a32236137e.jpg">
+            </div>
+            <div class=""movie-info>
+                <h5 class="movie-title">Toxic: A Fairy Tale For Grown-ups</h5>
+                <span class="movie-details">A | Hindi and 1 More</span>
+            </div>
+        </div>
+
+            <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://cdn.district.in/movies-assets/images/cinema/_Poster-d0d78f60-961a-11f1-8483-eb84b060bac3.jpg">
+            </div>
+            <div class=""movie-info>
+                <h5 class="movie-title">Mirzapur:The Movie</h5>
+                <span class="movie-details">A | Hindi</span>
+            </div>
+        </div>
+            <div class="movie-card">
+                <div class="movie-image">
+                    <img src="https://cdn.district.in/movies-assets/images/cinema/AW_Poster-18591030-9548-11f1-b29d-8985d3d6c644.jpg">
+                </div>
+                <div class="movie-info">
+                    <h5 class="moie-title">Awarapan2</h5>
+                    <span class="movie-details">UA16+ | Hindi</span>
+                </div>
+            </div>
+
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://cdn.district.in/assets/events/publisher/event_cover_image_vertical/01KVTRW7RGBA8S7F8JK8CFPEYY.jpg">
+            
+            </div>
+        <div class=""movie-info>
+                <h6 class="movie title">Wed,2 Sept-Sun, 6 Sept,Multiple slots</h6>
+                <h5 class="movie-title">Adult Jokes Only</h5>
+                <span class="movie-details">TOT Studio,Delhi/NCR</span>
+            </div>
+        </div>
+        
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://cdn.district.in/events/cd-media/image/upload/v1771999200/t1xf8f9ciyzvemtxk4xl.png">
+            </div>
+        <div class=""movie-info>
+                <h6 class="movie title">Daily,Multiple Slots</h6>
+                <h5 class="movie-title">F9 Go Karting | Sector 59</h5>
+                <span class="movie-details">675 onwards</span>
+            </div>
+        </div>
+
+        
+
+</body>
+</head>
